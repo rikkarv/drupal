@@ -1,0 +1,22 @@
+name: fullscreen
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - fullscreen/base
+  - fullscreen/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - fullscreen/user
+  core/drupal.dropbutton:
+    - fullscreen/dropbutton
+  core/drupal.dialog:
+    - fullscreen/dialog
+  file/drupal.file:
+    - fullscreen/file
+  core/drupal.progress:
+    - fullscreen/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.1'
